@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
-from brain_games import cli
-from .brain_games import main
+from brain_games import cli # type: ignore
+from .brain_games import main as greeting
 import random
 
 
-def game_calc():
-    main()
+def main():
+    greeting()
     print('What is the result of the expression?')
     i = 0
     while i < 3:
@@ -31,4 +31,4 @@ Let's try again, {cli.name}!""")
 
 
 if __name__ == '__main__':
-    game_calc()
+    main()
