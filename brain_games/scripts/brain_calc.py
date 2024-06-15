@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-from brain_games import cli # type: ignore
+from brain_games import cli  # type: ignore
 from .brain_games import main as greeting
 import random
 
@@ -21,13 +21,12 @@ def main():
         elif random_sign == '*':
             answer = random_first_num * random_second_num
         if player_input == answer:
-            i+= 1
+            i += 1
             print('Correct!')
         else:
             return print(f"""'{player_input}' is wrong answer ;(. Correct answer was '{answer}'.
 Let's try again, {cli.name}!""")
     print(f'Congratulations, {cli.name}!')
-
 
 
 if __name__ == '__main__':

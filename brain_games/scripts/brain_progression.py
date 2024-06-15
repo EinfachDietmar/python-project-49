@@ -27,13 +27,14 @@ def main():
         print(f'Question: {" ".join(str(x) for x in hidden_num)}')
         player_input = int(input('Your answer: '))
         if player_input == num:
-            i+= 1
+            i += 1
             num_list = []
             print('Correct!')
         else:
             return print(f"""'{player_input}' is wrong answer ;(. Correct answer was '{num}'.
 Let's try again, {cli.name}!""")
     print(f'Congratulations, {cli.name}!')
+
 
 if __name__ == '__main__':
     main()

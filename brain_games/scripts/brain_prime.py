@@ -5,7 +5,7 @@ import random
 
 
 def is_prime(num):
-    for ind in range(2, (num//2)+1):
+    for ind in range(2, (num // 2) + 1):
         if num % ind == 0:
             return False
     return True
@@ -20,23 +20,22 @@ def main():
         print(f'Question: {num}')
         answer = is_prime(num)
         correct_answer = ''
-        if answer == True:
+        if answer is True:
             correct_answer = 'yes'
-        elif answer == False:
+        elif answer is False:
             correct_answer = 'no'
 
         player_input = str(input('Your answer: ')).lower()
 
-        if answer == True and player_input == 'yes':
-            i+= 1
+        if answer is True and player_input == 'yes':
+            i += 1
             print('Correct!')
-        elif answer == False and player_input == 'no':
-            i+= 1
+        elif answer is False and player_input == 'no':
+            i += 1
             print('Correct!')
         else:
             return print(f"""'{player_input}' is wrong answer ;(. Correct answer was '{correct_answer}'.
 Let's try again, {cli.name}!""")
-        
     print(f'Congratulations, {cli.name}!')
 
 

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-from brain_games import cli # type: ignore
+from brain_games import cli  # type: ignore
 
 
 def main():

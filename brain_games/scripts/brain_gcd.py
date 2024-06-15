@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-from brain_games import cli # type: ignore
+from brain_games import cli  # type: ignore
 from .brain_games import main as greeting
 import random
 
@@ -27,7 +27,7 @@ def main():
         player_input = int(input('Your answer: '))
 
         if player_input == max(div_list):
-            i+= 1
+            i += 1
             print('Correct!')
         else:
             return print(f"""'{player_input}' is wrong answer ;(. Correct answer was '{max(div_list)}'.
