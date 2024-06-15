@@ -21,11 +21,11 @@ def main():
         elif random_number % 2 == 1 and player_input == 'yes':
             right_answer = 'no'
             return print(f"""'{player_input}' is wrong answer ;(. Correct answer was '{right_answer}'.
-Let's try again, {cli.name}""")
+Let's try again, {cli.name}!""")
         elif random_number % 2 == 0 and player_input == 'no':
             right_answer = 'yes'
             return print(f"""'{player_input}' is wrong answer ;(. Correct answer was '{right_answer}'.
-Let's try again, {cli.name}""")
+Let's try again, {cli.name}!""")
     print(f'Congratulations, {cli.name}!')
 
 
