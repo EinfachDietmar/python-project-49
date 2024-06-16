@@ -19,22 +19,23 @@ def main():
         num = random.randint(0, 1000)
         print(f'Question: {num}')
         answer = is_prime(num)
-        correct_answer = ''
+        x = ''
         if answer is True:
-            correct_answer = 'yes'
+            x = 'yes'
         elif answer is False:
-            correct_answer = 'no'
+            x = 'no'
 
-        player_input = str(input('Your answer: ')).lower()
+        inp = str(input('Your answer: ')).lower()
 
-        if answer is True and player_input == 'yes':
+        if answer is True and inp == 'yes':
             i += 1
             print('Correct!')
-        elif answer is False and player_input == 'no':
+        elif answer is False and inp == 'no':
             i += 1
             print('Correct!')
         else:
-            return print(f"""'{player_input}' is wrong answer ;(. Correct answer was '{correct_answer}'.
+            return print(
+                f"""'{inp}' is wrong answer ;(. Correct answer was '{x}'.
 Let's try again, {cli.name}!""")
     print(f'Congratulations, {cli.name}!')
 

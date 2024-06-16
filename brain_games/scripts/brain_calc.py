@@ -13,18 +13,19 @@ def main():
         random_second_num = random.randint(0, 100)
         random_sign = random.choice(('-', '+', '*'))
         print(f'Question: {random_first_num} {random_sign} {random_second_num}')
-        player_input = int(input('Your answer: '))
+        inp = int(input('Your answer: '))
         if random_sign == '-':
             answer = random_first_num - random_second_num
         elif random_sign == '+':
             answer = random_first_num + random_second_num
         elif random_sign == '*':
             answer = random_first_num * random_second_num
-        if player_input == answer:
+        if inp == answer:
             i += 1
             print('Correct!')
         else:
-            return print(f"""'{player_input}' is wrong answer ;(. Correct answer was '{answer}'.
+            return print(
+                f"""'{inp}' is wrong answer ;(. Correct answer was '{answer}'.
 Let's try again, {cli.name}!""")
     print(f'Congratulations, {cli.name}!')
 

@@ -24,13 +24,15 @@ def main():
             else:
                 continue
 
-        player_input = int(input('Your answer: '))
+        inp = int(input('Your answer: '))
 
-        if player_input == max(div_list):
+        if inp == max(div_list):
             i += 1
             print('Correct!')
         else:
-            return print(f"""'{player_input}' is wrong answer ;(. Correct answer was '{max(div_list)}'.
+            x = max(div_list)
+            return print(
+                f"""'{inp}' is wrong answer ;(. Correct answer was '{x}'.
 Let's try again, {cli.name}!""")
     print(f'Congratulations, {cli.name}!')
 
